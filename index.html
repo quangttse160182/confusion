@@ -178,6 +178,16 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+        <div class="row row-content" style="min-height: 20px; padding: 15px">
+          <div class="btn-group" id="carouselButton">
+            <button class="btn btn-danger btn-sm" id="carousel-pause">
+              <span class="fa fa-pause"></span>
+            </button>
+            <button class="btn btn-danger btn-sm" id="carousel-play">
+              <span class="fa fa-play"></span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
     <header class="jumbotron">
@@ -357,6 +367,16 @@
     <script>
       $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
+      });
+
+      $(document).readduy(function () {
+        $('#myCarousel1').carousel({ interval: 500 });
+        $('#carousel-pause').click(function () {
+          $('#myCarousel').carousel('pause');
+        });
+        $('#carousel-play').click(function () {
+          $('#myCarousel').carousel('play');
+        });
       });
     </script>
   </body>
