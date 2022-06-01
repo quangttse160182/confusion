@@ -70,3 +70,16 @@ body {
   margin: auto;
   z-index: 1;
 }
+
+.modal-header {
+  background-color: $background-dark;
+  color: $lt-gray;
+  border: none;
+}
+.modal-header button {
+  color: $lt-gray;
+}
+
+.modal-body {
+  background-color: $background-pale;
+}

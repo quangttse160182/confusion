@@ -79,7 +79,9 @@
         <div class="modal-content">
           <div class="modal-header">
             <h4 class="modal-title">Login</h4>
-            <button class="close" data-dismiss="modal">&times;</button>
+            <button class="close close-secondary" data-dismiss="modal">
+              &times;
+            </button>
           </div>
           <div class="modal-body">
             <form>
@@ -330,16 +332,17 @@
 
     <!-- form reserver -->
     <div class="modal fade" role="dialog" id="reserveModal">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
         <form class="modal-content">
           <div class="modal-header">
+            <h4 class="m-0">Reserve a table</h4>
             <button class="close" data-dismiss="modal">&times;</button>
           </div>
-          <div class="modal-body">
-            <div class="bg-warning p-3">
+          <div class="modal-body pl-4">
+            <!-- <div class="bg-warning p-3">
               <h4 class="m-0">Reserve a table</h4>
-            </div>
-            <div class="form-group py-3 px-1">
+            </div> -->
+            <div class="form-group pt-3 px-1">
               <label class="form-check-label mr-5">Num of guests</label>
               <div class="form-check form-check-inline">
                 <input
@@ -371,17 +374,9 @@
                 />
                 <label class="form-check-label" for="inlineRadio3">3</label>
               </div>
-              <div class="form-group mt-2 mb-4">
-                <label class="form-check-label">Date and time</label>
-                <div>
-                  <input type="text" name="" placeholder="Date" />
-                  <input type="text" name="" placeholder="Time" />
-                </div>
-              </div>
-
-              <div class="form-group py-3 px-1">
+              <div class="form-group pt-3">
                 <label class="form-check-label mr-5">Selection</label>
-                <div class="form-check form-check-inline">
+                <div class="form-check form-check-inline ml-5">
                   <input
                     type="radio"
                     class="form-check-input"
@@ -412,6 +407,22 @@
                 </div>
               </div>
             </div>
+            <div class="form-group ml-1 mb-4">
+              <label class="form-check-label mr-5">Date and time</label>
+              <input
+                class="border-0 rounded p-2 ml-1"
+                type="text"
+                name=""
+                placeholder="Date"
+              />
+              <input
+                class="border-0 rounded p-2"
+                type="text"
+                name=""
+                placeholder="Time"
+              />
+            </div>
+
             <div>
               <button class="btn btn-secondary mr-2" data-dismiss="modal">
                 Cancel
