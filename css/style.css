@@ -16,7 +16,7 @@
 .jumbotron {
   margin: 0px auto;
   padding: 70px 30px;
-  background-color: #d1c4e9;
+  background-color: #9575cd;
   color: floralwhite; }
 
 address {
@@ -38,17 +38,13 @@ body {
   padding: 10px; }
 
 .carousel {
-  background-color: #512da8; }
+  background: #512da8; }
   .carousel .carousel-item {
-    height: 300px; }
-    .carousel .carousel-item item {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-height: 300px; }
+    height: 645px; }
+    .carousel .carousel-item img {
+      min-height: 100%;
+      margin: auto; }
 
 #carouselButton {
-  right: 0px;
-  position: absolute;
-  bottom: 0px;
+  margin: auto;
   z-index: 1; }
